@@ -40,6 +40,7 @@
             this.listBoxProcess.Name = "listBoxProcess";
             this.listBoxProcess.Size = new System.Drawing.Size(776, 173);
             this.listBoxProcess.TabIndex = 0;
+            this.listBoxProcess.SelectedIndexChanged += new System.EventHandler(this.listBoxProcess_SelectedIndexChanged);
             // 
             // labelProcess
             // 

@@ -55,8 +55,17 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\DAO\FormDAO.cs" />
+    <Compile Include="Model\DAO\TaskDAO.cs" />
+    <Compile Include="Model\Entity\EnumValue.cs" />
+    <Compile Include="Model\Entity\Form.cs" />
+    <Compile Include="Model\Entity\FormData.cs" />
+    <Compile Include="Model\Entity\FormProperty.cs" />
+    <Compile Include="Model\Entity\NewFormProperty.cs" />
     <Compile Include="Model\Entity\ProcessInstance.cs" />
     <Compile Include="Model\Entity\ProcessInstances.cs" />
+    <Compile Include="Model\Entity\Task.cs" />
+    <Compile Include="Model\Entity\Tasks.cs" />
     <Compile Include="ProcessDefForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +88,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaskForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskForm.Designer.cs">
+      <DependentUpon>TaskForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -97,6 +112,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TaskForm.resx">
+      <DependentUpon>TaskForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

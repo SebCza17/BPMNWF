@@ -52,5 +52,11 @@ namespace BPMNWF
             processDAO.addProcessInstance(processDefinition.id);
             fillListBoxProcess();
         }
+
+        private void listBoxProcess_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            TaskForm taskForm = new TaskForm(restApp, (Model.Entity.ProcessInstance)listBoxProcess.SelectedItem);
+            taskForm.Show();
+        }
     }
 }

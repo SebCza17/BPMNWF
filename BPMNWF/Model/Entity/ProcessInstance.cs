@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BPMNWF.Model.Entity
 {
-    class ProcessInstance
+    public class ProcessInstance
     {
         public string id { get; set; }
         public string url { get; set; }
